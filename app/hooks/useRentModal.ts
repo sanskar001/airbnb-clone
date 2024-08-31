@@ -8,7 +8,7 @@ export interface RentModalStore {
 
 const useRentModal = create<RentModalStore>((set) => {
   return {
-    isOpen: true,
+    isOpen: false,
     onOpen: () => set({ isOpen: true }),
     onClose: () => set({ isOpen: false }),
   };
